@@ -35,6 +35,8 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.1.4'
 }
 
 apply from: '../publish.gradle'
