@@ -35,6 +35,8 @@ steps:
   commands:
   - ./gradlew :wechat-android:clean :wechat-android:install :wechat-android:artifactoryPublish
   when:
+    branch:
+    - master
     event:
     - push
 
