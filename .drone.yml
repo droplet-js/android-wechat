@@ -31,7 +31,7 @@ steps:
     BINTRAY_API_KEY:
       from_secret: BINTRAY_API_KEY
     VERSION_CODE: ${DRONE_BUILD_NUMBER}
-    VERSION_NAME: 1.0.0-SNAPSHOT
+    VERSION_NAME: 5.1.4-SNAPSHOT
   commands:
   - ./gradlew :wechat-android:clean :wechat-android:install :wechat-android:artifactoryPublish
   when:
@@ -52,7 +52,7 @@ steps:
     BINTRAY_API_KEY:
       from_secret: BINTRAY_API_KEY
     VERSION_CODE: ${DRONE_BUILD_NUMBER}
-    VERSION_NAME: 1.0.0
+    VERSION_NAME: 5.1.4
   commands:
   - ./gradlew :wechat-android:clean :wechat-android:install :wechat-android:bintrayUpload
   when:
