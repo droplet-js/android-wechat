@@ -112,7 +112,7 @@ subprojects {
 
         // ---
 
-        wechatVersion = '5.1.4'
+        wechatVersion = '5.3.1'
 
         // ---
 
